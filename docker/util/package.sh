@@ -17,7 +17,7 @@ cat $LITEMALL_HOME/litemall-db/sql/litemall_table.sql >> $LITEMALL_HOME/docker/d
 cat $LITEMALL_HOME/litemall-db/sql/litemall_data.sql >> $LITEMALL_HOME/docker/db/init-sql/litemall.sql
 
 # 安装阿里node镜像工具
-npm install -g cnpm --registry=https://registry.npm.taobao.org
+# npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 # 打包litemall-admin
 cd $LITEMALL_HOME/litemall-admin
