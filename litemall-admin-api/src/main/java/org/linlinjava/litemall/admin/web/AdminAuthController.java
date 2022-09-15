@@ -40,6 +40,7 @@ import static org.linlinjava.litemall.admin.util.AdminResponseCode.*;
 @RestController
 @RequestMapping("/admin/auth")
 @Validated
+// @CrossOrigin
 public class AdminAuthController {
     private final Log logger = LogFactory.getLog(AdminAuthController.class);
 
@@ -86,6 +87,7 @@ public class AdminAuthController {
      */
     @PostMapping("/login")
     public Object login(@RequestBody String body, HttpServletRequest request) {
+        System.out.println("Version have been updated ++++++");
         String username = JacksonUtil.parseString(body, "username");
         String password = JacksonUtil.parseString(body, "password");
 //        String code = JacksonUtil.parseString(body, "code");
