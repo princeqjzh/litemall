@@ -5,7 +5,7 @@
 export docker_image_name=litemall_img_2
 export docker_container_name=litemall_api_2
 
-cd ../..
+cd ..
 mvn clean install
 mvn package
 
